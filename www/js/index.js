@@ -16,8 +16,22 @@ function loadRepos() {
 */
 
 $(document).ready( function() {
-	 setInterval(loadRepos, 500);
+    loadPageFunction();
 });
+
+function loadPageFunction() {
+    var MAP = 1,
+        HOME = 0;
+    var currpage = HOME;
+
+
+    if ($('#geoLocation').length > 0 && currpage != MAP){
+        currpage = MAP;
+        loadmap();   
+    }
+
+    
+}
 
 var map_initialised = false;
 function loadRepos() {
@@ -34,7 +48,7 @@ function loadRepos() {
 		
         $('#allRepos').listview('refresh');
 		$("#ownerDetail").empty();
-		$("#ownerDetail").append(							
+		$("#ownerDetail").append(				
 							"<li><h4>miles Since Last Oil Change</h4><p>" + data.milesSinceLastOilChange + "</p></li>" +
 							"<li><h4>max Miles Until Oil Change</h4><p>" + data.maxMilesUntilOilChange + "</p></li>" +
 							"<li><h4>max Gas Gallons</h4><p>" + data.maxGasGallons + "</p></li>" +

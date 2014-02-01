@@ -37,10 +37,10 @@
                 <h1 id="car_app">CarPal</h1>
             </div>
             <div data-role="content">
-                
-                <ul id="mainmenu" data-role="listview"  data-filter="true">
-                    <li><a href = 'directions.html' ><h4>Directions</h4></a></li>
-                    <li><a href = 'poi.html' ><h4>Points of Interest</h4></a></li>
+                <ul id="directions" data-role="listview"  data-filter="true">
+                <input type="text" id="fromaddr" mozactionhint="next" name="start" placeholder="From: " x-webkit-speech/> 
+                <input type="text" mozactionhint="next" name="end" placeholder="To: " x-webkit-speech/> 
+                <li><a href = 'SelectRoute.html' ><h4>GO</h4></a></li>
                 </ul>
             </div>
         </div>
