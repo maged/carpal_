@@ -1,0 +1,10 @@
+{
+  "ownerName":"Bob",
+  "model":"BMW X3",
+  "miles":"12301",
+  "milesSinceLastOilChange":"2423",
+  "maxMilesUntilOilChange":"9000",
+  "gasGallons":"10",
+  "maxGasGallons":"40",
+  "milesPerGallon":"50"
+}
